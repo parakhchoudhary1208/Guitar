@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html,body 
+{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(28, 28, 28);
+}
+
+#main #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 3%;
+    height: 80px;
+    width: 100%;
+    padding: 0px 40px;
+    border-bottom: 1px solid rgb(97, 97, 97);
+}
+
+#main #nav #nav1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 550px; 
+}
+
+#main #nav #nav1 #nav11{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 65px;
+    width: 100px;
+}
+
+#main #nav #nav1 #nav11 svg:hover{
+    cursor: pointer;
+}
+
+#main #nav #nav1 #nav12{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 65px;
+    width: 350px;
+}
+
+#main #nav #nav1 #nav12 h3{
+    font-family: Gilroy;
+    font-size: 18px;
+    color: rgb(196, 196, 196);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#main #nav #nav1 #nav12 h3:hover{
+    cursor: pointer;
+    color: white;
+}
+
+#main #nav #nav2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 350px;
+}
+
+#main #nav #nav2 i{
+    font-size: 25px;
+    color: rgb(196, 196, 196);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#main #nav #nav2 i:hover{
+    cursor: pointer;
+    color: white;
+}
+
+#main #nav #nav2 #num{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 120px;
+}
+
+#main #nav #nav2 #num svg{
+    position: absolute;
+    left: 4%;
+    top: 16%;
+    cursor: pointer;
+}
+
+#main #nav #nav2 #num h3{
+    font-family: Gilroy;
+    font-size: 20px;
+    color: rgb(196, 196, 196);
+    font-weight: 400;
+    position: absolute;
+    right: 20%;
+    cursor: pointer;
+}
+
+#main #nav #nav2 #pic{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url("https://images.unsplash.com/photo-1583864697784-a0efc8379f70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+#part1{
+    position: absolute;
+    top: 13%;
+    width: 40%;
+    height: 70%;
+    border-bottom: 1px solid rgba(97, 97, 97, 0.254);
+}
+
+#part{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 83%;
+    width: 40%;
+    height: 17%;
+    border-right: 1px solid rgba(97, 97, 97, 0.254);
+}
+
+#part #card1{
+    height: 120px;
+    width: 100px;
+}
+
+#part #card1 h4{
+    margin: 20px 10px;
+    font-family: Gilroy;
+    font-size: 15px;
+    color: rgb(104, 104, 104);
+}
+
+#part #card1 h3{
+    margin: 0px 10px;
+    font-family: Gilroy;
+    font-size: 18px;
+    color: rgb(212, 211, 211);
+}
+
+#part #card2{
+    height: 120px;
+    width: 140px;
+}
+
+#part #card2 h4{
+    margin: 20px 10px;
+    font-family: Gilroy;
+    font-size: 15px;
+    color: rgb(104, 104, 104);
+}
+
+#part #card2 h3{
+    margin: 0px 10px;
+    font-family: Gilroy;
+    font-size: 11px;
+    color: rgb(212, 211, 211);
+}
+
+#part #card3{
+    height: 120px;
+    width: 100px;
+}
+
+#part #card3 h4{
+    margin: 20px 10px;
+    font-family: Gilroy;
+    font-size: 15px;
+    color: rgb(104, 104, 104);
+}
+
+#part #card3 h3{
+    margin: 0px 10px;
+    font-family: Gilroy;
+    font-size: 15px;
+    color: rgb(212, 211, 211);
+}
+
+#part #card4{
+    height: 120px;
+    width: 140px;
+}
+
+#part #card4 h4{
+    margin: 20px 10px;
+    font-family: Gilroy;
+    font-size: 15px;
+    color: rgb(104, 104, 104);
+}
+
+#part #card4 h3{
+    margin: 0px 10px;
+    font-family: Gilroy;
+    font-size: 15px;
+    color: rgb(212, 211, 211);
+}
+
+#part1 #number{
+    width: 70px;
+    position: absolute;
+    top: 8%;
+    left: 6%;
+    overflow: hidden;
+}
+
+#part1 #number h1{
+    font-size: 45px;
+    color: rgb(196, 196, 196);
+    font-weight: 400;
+    font-family: Bebas Neue;
+    cursor: pointer;
+    margin: 0px -7px;
+}
+
+#part1 #number h4{
+    font-size: 25px;
+    color: rgb(126, 126, 126);
+    font-weight: 400;
+    font-family: Bebas Neue;
+    cursor: pointer;
+    margin: 0px 2px;
+}
+
+#part1 h4{
+    margin: 40% 6%;
+    font-family: Gilroy;
+    font-size: 25px;
+    color: rgba(218, 165, 32, 0.796);
+}
+
+#part1 #text{
+    margin: -36% 6%;
+}
+
+#part1 #text h1{
+    font-family: Gilroy;
+    font-size: 50px;
+    color: rgb(196, 196, 196);
+}
+
+#part2{
+    position: absolute;
+    top: 13%;
+    left: 40%;
+    width: 20%;
+    height: 87%;
+}
+
+#part2 #swipe{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 40%;
+    top: 7%;
+    height: 70px;
+    width: 200px;
+}
+
+#part2 #swipe #left{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    width: 80px;
+}
+
+#part2 #swipe #left svg:hover{
+    cursor: pointer;
+}
+
+#part2 #swipe #right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    width: 80px;
+}
+
+#part2 #swipe #right svg:hover{
+    cursor: pointer;
+}
+
+#part2 h1{
+    position: absolute;
+    left: -25%;
+    top: 13%;
+    letter-spacing: -25px;
+    font-size: 500px;
+    font-family: Bebas Neue;
+    font-weight: 400;
+    color: #f0a555b2;
+}
+
+#part2 img{
+    position: absolute;
+    left: -39%;
+    height: 65%;
+    top: 20%;
+}
+
+#part2 #text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 40%;
+    top: 93%;
+    height: 40px;
+    width: 170px;
+}
+
+#part2 #text1 h4{
+    font-family: Gilroy;
+    color: rgba(201, 201, 201, 0.521);
+    font-size: 18px;
+}
+
+#part3{
+    overflow: hidden;
+    position: absolute;
+    top: 13%;
+    left: 60%;
+    width: 20%;
+    height: 87%;
+    border-left: 1px solid rgba(97, 97, 97, 0.604);
+}
+
+#part3 #number1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 12.5%;
+    top: 10%;
+    height: 45px;
+    width: 55px;
+    overflow: hidden;
+}
+
+#part3 #number1 h1{
+    position: absolute;
+    left: -12%;
+    font-family: Bebas Neue;
+    font-size: 40px;
+    color: rgb(233, 233, 233);
+}
+
+#part3 h1{
+    font-size: 350px;
+    font-family: Bebas Neue;
+    position: absolute;
+    top: 15%;
+    right: -25%;
+    color: rgb(89, 89, 89);
+}
+
+#part3 img{
+    position: absolute;
+    height: 360px;
+    width: 290px;
+    top: 17%;
+    left: 1.6%;
+}
+
+#part3 #text2{
+    position: absolute;
+    left: 12.5%;
+    top: 76%;
+}
+
+#part3 #text2 h2{
+    color: rgb(196, 196, 196);
+    line-height: 30px;
+    font-family: Gilroy;
+    font-size: 25px;
+}
+
+#part3 #best{
+    position: absolute;
+    top: 70%;
+    left: 12.5%;
+    color: rgb(196, 196, 196);
+    font-family: Gilroy;
+    color: rgba(218, 165, 32, 0.796);
+}
+
+#part3 #text3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 40%;
+    top: 93%;
+    height: 40px;
+    width: 170px;
+}
+
+#part3 #text3 h4{
+    font-family: Gilroy;
+    color: rgba(201, 201, 201, 0.521);
+    font-size: 18px;
+}
+
+#part4{
+    overflow: hidden;
+    position: absolute;
+    top: 13%;
+    left: 80%;
+    width: 20%;
+    height: 87%;
+    border-left: 1px solid rgba(97, 97, 97, 0.604);
+}
+
+#part4 #number2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 12.5%;
+    top: 10%;
+    height: 45px;
+    width: 55px;
+    overflow: hidden;
+}
+
+#part4 #number2 h1{
+    position: absolute;
+    left: -12%;
+    font-family: Bebas Neue;
+    font-size: 40px;
+    color: rgb(233, 233, 233);
+}
+
+#part4 h1{
+    font-size: 350px;
+    font-family: Bebas Neue;
+    position: absolute;
+    top: 15%;
+    right: -25%;
+    color: rgb(89, 89, 89);
+}
+
+#part4 img{
+    position: absolute;
+    height: 340px;
+    width: 290px;
+    top: 17%;
+    left: 1.3%;
+}
+
+#part4 #text4{
+    position: absolute;
+    left: 12.5%;
+    top: 76%;
+}
+
+#part4 #text4 h2{
+    color: rgb(196, 196, 196);
+    line-height: 30px;
+    font-family: Gilroy;
+    font-size: 25px;
+}
+
+#part4 #best1{
+    position: absolute;
+    top: 70%;
+    left: 12.5%;
+    color: rgb(196, 196, 196);
+    font-family: Gilroy;
+    color: rgba(218, 165, 32, 0.796);
+}
+
+#part4 #text5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 40%;
+    top: 93%;
+    height: 40px;
+    width: 170px;
+}
+
+#part4 #text5 h4{
+    font-family: Gilroy;
+    color: rgba(201, 201, 201, 0.521);
+    font-size: 18px;
+}
